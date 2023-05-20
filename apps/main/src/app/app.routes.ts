@@ -11,4 +11,9 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./router-before.component').then(m => m.RouterBeforeComponent),
         title: 'Router Before',
       },
+      {
+        path: 'router-after',
+        loadComponent: () => import('./router-after.component').then(m => m.RouterAfterComponent),
+        title: 'Router Before',
+      },
 ];

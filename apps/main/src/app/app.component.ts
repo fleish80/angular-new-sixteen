@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink],
   selector: 'df-root',
-  template: `<router-outlet></router-outlet>`,
-  styles: [``],
+  template: `<nav class="nav">
+      <a routerLink="/router-before">Router Before</a>
+      <a routerLink="/router-after">Router After</a>
+    </nav>
+    <router-outlet />`,
+  styles: [
+    `
+      .nav {
+        display: flex;
+        gap: 10px;
+        padding-block-end: 10px;
+      }
+    `,
+  ],
 })
 export class AppComponent {
   title = 'main';

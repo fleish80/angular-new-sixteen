@@ -6,15 +6,22 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'df-router-before',
   standalone: true,
   imports: [CommonModule],
-  template: `<p>router-before works!</p>`,
+  template: `
+    <p>q = {{q}}</p>
+    <p>x = {{x}}</p>
+  `,
   styles: [],
 })
-export class RouterBeforeComponent implements OnInit{
- 
+export class RouterBeforeComponent implements OnInit {
   #activeRouter = inject(ActivatedRoute);
+  q: string | null;
+  x: number;
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  } 
-  
+    this.#activeRouter.queryParamMap.subscribe((queryParmas) => {
+      this.q = queryParmas.get('q');
+      const xParam = queryParmas.get('x') ?? '';
+      this.x = parseInt(xParam);
+    });
+  }
 }
