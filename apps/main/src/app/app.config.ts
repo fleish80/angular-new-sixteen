@@ -1,8 +1,7 @@
 import { ApplicationConfig } from '@angular/core';
 import {
   provideRouter,
-  withComponentInputBinding,
-  withEnabledBlockingInitialNavigation,
+  withComponentInputBinding
 } from '@angular/router';
 import { appRoutes } from './app.routes';
 

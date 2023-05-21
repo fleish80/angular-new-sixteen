@@ -8,6 +8,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   template: `<nav class="nav">
       <a routerLink="/router-before">Router Before</a>
       <a routerLink="/router-after">Router After</a>
+      <a routerLink="/destroy-ref">Destroy Ref</a>
+      <a routerLink="/destroy-ref-usage">Destroy Ref Usage</a>
     </nav>
     <router-outlet />`,
   styles: [

@@ -16,4 +16,14 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./router-after.component').then(m => m.RouterAfterComponent),
         title: 'Router Before',
       },
+      {
+        path: 'destroy-ref',
+        loadComponent: () => import('./destroy-ref.component').then(m => m.DestroyRefComponent),
+        title: 'Destriy Ref',
+      },
+      {
+        path: 'destroy-ref-usage',
+        loadComponent: () => import('./destroy-ref-usage.component').then(m => m.DestroyRefUsageComponent),
+        title: 'Destriy Ref Usage',
+      },
 ];
