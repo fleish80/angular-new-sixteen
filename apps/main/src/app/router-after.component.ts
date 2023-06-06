@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'df-router-after',
