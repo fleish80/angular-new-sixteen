@@ -12,15 +12,8 @@ import { Router } from '@angular/router';
   `,
   styles: [],
 })
-export class RouterAfterComponent implements OnInit {
+export default class RouterAfterComponent {
   
   @Input () q: string;
   @Input () x: number;
-
-  #router = inject(Router);
-
-  ngOnInit(): void {
-    console.log('lastSuccessfulNavigation', this.#router.lastSuccessfulNavigation);
-  }
-   
 }

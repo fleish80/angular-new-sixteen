@@ -7,7 +7,7 @@ import { Component, DestroyRef, inject } from '@angular/core';
   template: `<p>destroy-ref works!</p>`,
   styles: [],
 })
-export class DestroyRefComponent {
+export default class DestroyRefComponent {
 
   #destroyRef = inject(DestroyRef);
 

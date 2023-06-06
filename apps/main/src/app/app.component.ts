@@ -10,6 +10,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <a routerLink="/router-after">Router After</a>
       <a routerLink="/destroy-ref">Destroy Ref</a>
       <a routerLink="/destroy-ref-usage">Destroy Ref Usage</a>
+      <a routerLink="/mandatory-input">Mandatory input</a>
+      <a routerLink="/last-success-full-navigation">Last Success Full Navigation</a>
     </nav>
     <router-outlet />`,
   styles: [

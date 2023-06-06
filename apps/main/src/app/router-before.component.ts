@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
   `,
   styles: [],
 })
-export class RouterBeforeComponent implements OnInit {
+export default class RouterBeforeComponent implements OnInit {
   #activeRouter = inject(ActivatedRoute);
   q: string | null;
   x: number;

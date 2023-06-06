@@ -10,7 +10,7 @@ import { untilDestroyedUtil } from './until-destroyed.util';
   template: `<p>destroy-ref-usage works!</p>`,
   styles: [],
 })
-export class DestroyRefUsageComponent implements OnInit {
+export default class DestroyRefUsageComponent implements OnInit {
 
   #untilDestroyed = untilDestroyedUtil();
 

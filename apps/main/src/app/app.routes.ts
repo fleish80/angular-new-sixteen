@@ -8,22 +8,32 @@ export const appRoutes: Route[] = [
       },
       {
         path: 'router-before',
-        loadComponent: () => import('./router-before.component').then(m => m.RouterBeforeComponent),
+        loadComponent: () => import('./router-before.component'),
         title: 'Router Before',
       },
       {
         path: 'router-after',
-        loadComponent: () => import('./router-after.component').then(m => m.RouterAfterComponent),
+        loadComponent: () => import('./router-after.component'),
         title: 'Router Before',
       },
       {
         path: 'destroy-ref',
-        loadComponent: () => import('./destroy-ref.component').then(m => m.DestroyRefComponent),
+        loadComponent: () => import('./destroy-ref.component'),
         title: 'Destriy Ref',
       },
       {
         path: 'destroy-ref-usage',
-        loadComponent: () => import('./destroy-ref-usage.component').then(m => m.DestroyRefUsageComponent),
+        loadComponent: () => import('./destroy-ref-usage.component'),
         title: 'Destriy Ref Usage',
+      },
+      {
+        path: 'mandatory-input',
+        loadComponent: () => import('./manadatory-input.component'),
+        title: 'Destriy Ref Usage',
+      },
+      {
+        path: 'last-success-full-navigation',
+        loadComponent: () => import('./last-success-full-navigation.component'),
+        title: 'Last Success Full Navigation',
       },
 ];
