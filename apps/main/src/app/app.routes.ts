@@ -36,4 +36,9 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./last-success-full-navigation.component'),
         title: 'Last Success Full Navigation',
       },
+      {
+        path: 'run-injection-context',
+        loadComponent: () => import('./run-injection-context.component'),
+        title: 'Run Injection Context',
+      },
 ];

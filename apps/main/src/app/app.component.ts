@@ -12,6 +12,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <a routerLink="/destroy-ref-usage">Destroy Ref Usage</a>
       <a routerLink="/mandatory-input">Mandatory input</a>
       <a routerLink="/last-success-full-navigation">Last Success Full Navigation</a>
+      <a routerLink="/run-injection-context">Run Injection Context</a>
     </nav>
     <router-outlet />`,
   styles: [
