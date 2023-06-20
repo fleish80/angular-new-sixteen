@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 function toNumber(value: string){
-  return Number(value) ? value : parseInt(value.toString());
+  return Number(value) ?? parseInt(value.toString());
 }
 
 @Component({
@@ -24,8 +24,8 @@ export default class TransformInputChildComponent implements OnInit {
   @Input({ transform: toNumber }) afterWidth: number;
 
   ngOnInit(): void {
-    console.log('before', this.#beforeWidth);
-    console.log('after', this.afterWidth);
+    console.log('before', this.#beforeWidth, typeof this.#beforeWidth);
+    console.log('after', this.afterWidth, typeof this.afterWidth );
   }
 
 }
