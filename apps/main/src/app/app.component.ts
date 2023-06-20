@@ -13,6 +13,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <a routerLink="/mandatory-input">Mandatory input</a>
       <a routerLink="/last-success-full-navigation">Last Success Full Navigation</a>
       <a routerLink="/run-injection-context">Run Injection Context</a>
+      <a routerLink="/transform-input">Transform Input</a>
     </nav>
     <router-outlet />`,
   styles: [

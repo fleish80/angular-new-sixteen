@@ -41,4 +41,9 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./run-injection-context.component'),
         title: 'Run Injection Context',
       },
+      {
+        path: 'transform-input',
+        loadComponent: () => import('./transform-input.component'),
+        title: 'Transform input',
+      },
 ];
