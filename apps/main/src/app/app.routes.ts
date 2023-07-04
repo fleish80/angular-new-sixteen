@@ -13,7 +13,7 @@ export const appRoutes: Route[] = [
         title: 'Router Before',
       },
       {
-        path: 'router-after',
+        path: 'router-after/:id',
         loadComponent: () => import('./router-after.component'),
         title: 'Router Before',
       },

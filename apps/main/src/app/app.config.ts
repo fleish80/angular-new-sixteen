@@ -1,4 +1,4 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import {
   provideRouter,
   withComponentInputBinding
@@ -6,5 +6,13 @@ import {
 import { appRoutes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(appRoutes, withComponentInputBinding())],
+  providers: [
+    provideRouter(appRoutes, withComponentInputBinding()),
+    provideZoneChangeDetection({runCoalescing: true, eventCoalescing: true}),
+    // {provide: NgZone, useValue: CustomNzZone},
+    /**
+     * withFetch is needed to stop using polyfill in ssr
+     */
+    // provideHttpClient(withFetch())
+  ],
 };

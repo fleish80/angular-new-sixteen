@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
   template: `
     <p>q = {{q}}</p>
     <p>x = {{x}}</p>
+    <p>id = {{id}}</p>
 
   `,
   styles: [],
@@ -15,4 +16,5 @@ export default class RouterAfterComponent {
   
   @Input () q: string;
   @Input () x: number;
+  @Input () id: number;
 }
