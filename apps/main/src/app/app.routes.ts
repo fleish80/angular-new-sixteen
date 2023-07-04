@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+import { canMatchGuard } from './can-match.guard';
 
 export const appRoutes: Route[] = [
     {
@@ -45,5 +46,11 @@ export const appRoutes: Route[] = [
         path: 'transform-input',
         loadComponent: () => import('./transform-input.component'),
         title: 'Transform input',
+      },
+      {
+        path: 'can-match',
+        loadComponent: () => import('./can-match.component'),
+        title: 'Can Match',
+        canMatch: [canMatchGuard]
       },
 ];

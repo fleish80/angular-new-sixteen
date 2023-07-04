@@ -21,7 +21,7 @@ export default class TransformInputChildComponent implements OnInit {
       this.#beforeWidth = toNumber(value) as number;
   }
 
-  @Input({ transform: toNumber }) afterWidth: number;
+  @Input({ transform: toNumber }) afterWidth: string;
 
   ngOnInit(): void {
     console.log('before', this.#beforeWidth, typeof this.#beforeWidth);

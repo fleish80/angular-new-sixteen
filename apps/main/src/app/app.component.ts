@@ -14,6 +14,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <a routerLink="/last-success-full-navigation">Last Success Full Navigation</a>
       <a routerLink="/run-injection-context">Run Injection Context</a>
       <a routerLink="/transform-input">Transform Input</a>
+      <a routerLink="/can-match">Can Match</a>
     </nav>
     <router-outlet />`,
   styles: [
