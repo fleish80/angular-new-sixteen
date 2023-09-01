@@ -13,14 +13,18 @@ export const appRoutes: Route[] = [
         title: 'Router Before',
       },
       {
+        path: 'router-after',
+        redirectTo: 'router-after/3'
+      },
+      {
         path: 'router-after/:id',
         loadComponent: () => import('./router-after.component'),
-        title: 'Router Before',
+        title: 'Router After',
       },
       {
         path: 'destroy-ref',
         loadComponent: () => import('./destroy-ref.component'),
-        title: 'Destriy Ref',
+        title: 'Destroy Ref',
       },
       {
         path: 'destroy-ref-usage',
@@ -52,5 +56,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./can-match.component'),
         title: 'Can Match',
         canMatch: [canMatchGuard]
+      },
+      {
+        path: 'binding-inputs',
+        loadComponent: () => import('./binding-inputs.component'),
+        title: 'Binding inputs of NgComponentOutlet',
       },
 ];
