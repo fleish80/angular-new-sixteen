@@ -62,4 +62,9 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./binding-inputs.component'),
         title: 'Binding inputs of NgComponentOutlet',
       },
+      {
+        path: 'after-render',
+        loadComponent: () => import('./after-renderer.component'),
+        title: 'After render / After next tender',
+      },
 ];

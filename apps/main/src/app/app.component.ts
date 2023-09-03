@@ -16,6 +16,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <a routerLink="/transform-input">Transform Input</a>
       <a routerLink="/can-match">Can Match</a>
       <a routerLink="/binding-inputs">Binding inputs of NgComponentOutlet</a>
+      <a routerLink="/after-render">After render / After next tender</a>
     </nav>
     <router-outlet />`,
   styles: [
